@@ -37,9 +37,10 @@ struct DimmableLamp : Service::LightBulb {
 
     DimmableLamp(int lampPin) : Service::LightBulb() {
 
-        power = new Characteristic::On();
-        brightness = new Characteristic::Brightness(0, true);
+        power = new Characteristic::On(0, true);
+        brightness = new Characteristic::Brightness(50, true);
         brightness->setRange(0, 100, 1);
+        brightness->set
 
         this->lampPin=lampPin;
 
@@ -101,11 +102,6 @@ void setup() {
     new Service::AccessoryInformation();
     new Characteristic::Identify();
     new Characteristic::Name("Dimmable Lamp");
-
-    // create a new LightBulb service with the required characteristics
-    // the values will be stored in non-volatile storage to persist
-    new Characteristic::On(true, true);
-    new Characteristic::Brightness(50, true);
 
     new DimmableLamp(LAMP_PIN);
 }
