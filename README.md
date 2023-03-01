@@ -18,7 +18,7 @@ It is recommended that you use the [Arduino IDE](https://www.arduino.cc/en/softw
 
 You will need to [add the ESP32 board support](https://espressif-docs.readthedocs-hosted.com/projects/arduino-esp32/en/latest/installing.html) to your Arduino IDE.
 
-## Library Manager
+### Library Manager
 
 You will need to add the following libraries to your Arduino IDE:
 
