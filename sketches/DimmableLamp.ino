@@ -94,7 +94,7 @@ void setup() {
 
     Serial.begin(115200);
 
-    homeSpan.begin();
+    homeSpan.begin(Category::Lighting, "Dimmable Lamp");
 
     // create a new Accessory with the required service and identify characteristics
     new SpanAccessory();

@@ -46,13 +46,14 @@ The WiFi credentials are used to connect the ESP32 to your home network.
 You can begin WiFi setup by issuing the `W` command, which will scan for available networks and list them in the Serial Monitor.
 
 You can then select a network by sending the index number shown in the Serial Monitor, followed by the network password when prompted.
+Alternatively, you can manually enter the SSID which can be useful if the network is hidden.
 
 It will then attempt to connect to the network and save the credentials to flash. Upon reboot, the ESP32 will attempt to connect to the network automatically.
 
 ### Resetting
 
 If you need to reset the ESP32, you can issue the `E` command to reset the WiFi credentials and pairing code back to the defaults.
-This will unpair the ESP32 from your iOS device and you will need to re-pair it.
+This will unpair the ESP32 from your iOS device, and you will need to re-pair it.
 
 ## Troubleshooting
 
