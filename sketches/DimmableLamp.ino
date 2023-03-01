@@ -37,10 +37,13 @@ struct DimmableLamp : Service::LightBulb {
 
     DimmableLamp(int lampPin) : Service::LightBulb() {
 
+        // The LightBulb service has two characteristics, On and Brightness.
+        // The On characteristic is a boolean value that turns the lamp on or off.
+        // The Brightness characteristic is an integer value that controls the brightness of the lamp.
+        // The second argument indicates that the value should be saved/restored from non-volatile memory.
         power = new Characteristic::On(0, true);
         brightness = new Characteristic::Brightness(50, true);
         brightness->setRange(0, 100, 1);
-        brightness->set
 
         this->lampPin=lampPin;
 
