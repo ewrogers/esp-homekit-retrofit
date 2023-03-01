@@ -104,8 +104,8 @@ void setup() {
 
     // create a new LightBulb service with the required characteristics
     // the values will be stored in non-volatile storage to persist
-    new Characteristic::On(false, true);
-    new Characteristic::Brightness(0, true);
+    new Characteristic::On(true, true);
+    new Characteristic::Brightness(50, true);
 
     new DimmableLamp(LAMP_PIN);
 }
