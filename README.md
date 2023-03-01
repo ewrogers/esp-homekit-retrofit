@@ -6,6 +6,10 @@ Collection of sketches for the ESP32 to retrofit existing devices with HomeKit s
 
 This should work with any ESP32 board that has a minimum of 2MB of flash. ESP8266 boards may work, but are not supported.
 
+## Sketches
+
+- [DimmableLamp](./sketches/DimmableLamp.ino) - Dimmable lamp using a PWM output to control the brightness.
+
 ## Prerequisites
 
 It is recommended that you use the [Arduino IDE](https://www.arduino.cc/en/software) (2.0+) to compile and upload the sketches.
