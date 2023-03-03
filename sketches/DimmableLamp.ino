@@ -25,7 +25,7 @@
 #include "HomeSpan.h"         // include the HomeSpan library
 
 #define PWM_CHANNEL 0           // PWM channel to use for the lamp
-#define PWM_RESOLUTION 10       // PWM resolution in bits
+#define PWM_RESOLUTION 8        // PWM resolution in bits
 #define PWM_FREQUENCY 5000      // PWM frequency in Hz
 #define LAMP_PIN 7              // output pin for the lamp relay trigger signal
 
